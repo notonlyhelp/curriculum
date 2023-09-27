@@ -1,0 +1,39 @@
+/* ウィンドウ幅が最大767px以下の場合 */
+@media screen and (max-width: 767px) {
+    .header {
+        width: 250px;
+    }
+ 
+    .main_left{
+        width: 150px;
+    }
+    .main_right {
+        width: 100px;
+    }
+ 
+    .footer {
+        width: 250px;
+    }
+ }
+ 
+ /* ウィンドウ幅が最大479px以下の場合 */
+ @media screen and (max-width: 479px) {
+    .header {
+        width: 150px;
+    }
+    .main_left ,
+    .main_right {
+        float: none; /* 浮動を解除 */
+        width: 150px;
+        display: block; /* ブロック要素に変更 */
+    }
+
+    .main {
+        display: flex;
+        flex-direction: column; /* 要素を垂直に配置 */
+    }
+ 
+    .footer {
+        width: 150px;
+    }
+ }
